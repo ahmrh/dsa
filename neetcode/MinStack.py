@@ -2,10 +2,11 @@ class MinStack:
 
     def __init__(self):
         self.stack = []
+        self.minStack = []
         
 
     def push(self, val: int) -> None:
-        self.stack.push(val)
+        self.stack.append(val)
         
         
 
@@ -20,7 +21,8 @@ class MinStack:
         min = self.stack.peek()
 
         for num in self.stack:
-            if min > num: min = num
+            if min > num:
+                min = num
         
         return min
         
