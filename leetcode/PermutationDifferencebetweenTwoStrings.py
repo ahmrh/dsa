@@ -13,9 +13,4 @@ class Solution:
                     diff += a 
                     break
 
-        
         return diff
-                    
-
-                
-        
